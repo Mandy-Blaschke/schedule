@@ -1,0 +1,39 @@
+.box {
+
+  .row {
+    display: flex;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 8px;
+
+    &.pause {
+      background: forestgreen;
+      color: black;
+    }
+
+    &:first-child {
+      font-weight: bold;
+
+      .col {
+        justify-content: center;
+      }
+    }
+
+    .col {
+      display: flex;
+      align-items: center;
+      width: 90px;
+      border: 1px solid lawngreen;
+      padding: 8px;
+      border-radius: 8px;
+
+      &:first-child, &:nth-child(2) {
+        justify-content: center;
+      }
+
+      &:last-child {
+        width: 400px;
+      }
+    }
+  }
+}

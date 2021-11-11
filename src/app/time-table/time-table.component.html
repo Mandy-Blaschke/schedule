@@ -1,0 +1,15 @@
+<div class="box">
+  <div class="row">
+    <div class="col">Start</div>
+    <div class="col">Ende</div>
+    <div class="col">Aufgabe</div>
+  </div>
+
+  <ng-container *ngFor="let item of entries">
+    <div class="row" [class.pause]="item.description === 'Pause'">
+      <div class="col">{{item.start}}</div>
+      <div class="col">{{item.end}}</div>
+      <div class="col">{{item.description}}</div>
+    </div>
+  </ng-container>
+</div>
